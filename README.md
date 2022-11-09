@@ -1,4 +1,4 @@
-# python-read-write-sheet
+# Smartsheets.py
 
 A Python sample application that loads a sheet, updates selected cells, and saves the results
 
@@ -15,6 +15,7 @@ This sample scans a sheet for rows where the value of the "Status" column is "Co
 column to zero.
 This is implemented in the `evaluate_row_and_build_updates()` method which you should modify to meet your needs.
 
+## Initialize client. Uses the API token in the environment variable "SMARTSHEET_ACCESS_TOKEN"
 
 ## Setup
 Install the smartsheet Python SDK from  
@@ -26,7 +27,7 @@ Install the smartsheet Python SDK from
 - Set the system environment variable `SMARTSHEET_ACCESS_TOKEN` to the value of your token, obtained from the Smartsheet Account button, under Personal settings
 
 ## Build and run the application.
-- `python python-read-write-sheet.py`
+- `python Smartsheets.py`
 
 The rows marked "Complete" will have the "Remaining" value set to 0. (Note that you will have to refresh in the desktop application to see the changes.)
 
